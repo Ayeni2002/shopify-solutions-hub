@@ -34,11 +34,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contact Info</h3>
             <div className="space-y-3">
               <a 
-                href="mailto:ayenijaywon@gmail.com" 
+                href="mailto:ayeniadejuwon@gmail.com" 
                 className="flex items-center space-x-2 text-background/70 hover:text-background transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>ayenijaywon@gmail.com</span>
+                <span>ayeniadejuwon@gmail.com</span>
               </a>
               <a 
                 href="tel:+2349137349007" 
@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8 mt-8 text-center">
           <p className="text-background/70">
             © {new Date().getFullYear()} SHOPTECH. All rights reserved. 
-            Professional Shopify solutions by Jaywon Ayeni.
+            Professional Shopify solutions by Adejuwon Ayeni.
           </p>
         </div>
       </div>

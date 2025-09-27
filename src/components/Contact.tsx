@@ -16,7 +16,7 @@ const contactMethods = [
     title: "Email",
     description: "Send me a detailed project inquiry",
     action: "Send Email",
-    href: "mailto:ayenijaywon@gmail.com",
+    href: "mailto:ayeniadejuwon@gmail.com",
     primary: false
   },
   {
@@ -100,7 +100,7 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center space-x-2 text-muted-foreground">
               <Mail className="w-4 h-4" />
-              <span>ayenijaywon@gmail.com</span>
+              <span>ayeniadejuwon@gmail.com</span>
             </div>
             <div className="hidden sm:block h-4 w-px bg-border"></div>
             <div className="flex items-center space-x-2 text-muted-foreground">

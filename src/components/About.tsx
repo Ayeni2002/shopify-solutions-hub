@@ -38,7 +38,7 @@ const About = () => {
                 Your Trusted Shopify Partner for Global Success
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm Jaywon Ayeni, a certified Shopify expert with years of experience helping businesses 
+                I'm Adejuwon Ayeni, a certified Shopify expert with years of experience helping businesses 
                 worldwide transform their online presence. From small startups to established brands, 
                 I've helped clients across the globe overcome their Shopify challenges and achieve 
                 remarkable growth.
