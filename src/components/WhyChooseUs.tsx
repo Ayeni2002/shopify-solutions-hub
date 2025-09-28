@@ -25,7 +25,7 @@ const reasons = [
   {
     icon: Award,
     title: "Proven Track Record",
-    description: "Consistent 5-star ratings and successful project completions on Upwork"
+    description: "Successful project completions on Upwork"
   },
   {
     icon: Users,
