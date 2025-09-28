@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8 mt-8 text-center">
           <p className="text-background/70">
             © {new Date().getFullYear()} SHOPTECH. All rights reserved. 
-            Professional Shopify solutions by Adejuwon Ayeni.
+            Professional Shopify solutions by Adejuwon Ayeni & Marvellous Adebanjo.
           </p>
         </div>
       </div>

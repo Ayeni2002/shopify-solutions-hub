@@ -62,7 +62,7 @@ const Services = () => {
             Comprehensive Shopify Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From store setup to advanced optimization, I provide end-to-end Shopify services 
+            From store setup to advanced optimization, we provide end-to-end Shopify services 
             that help your business grow and succeed in the competitive e-commerce landscape.
           </p>
         </div>

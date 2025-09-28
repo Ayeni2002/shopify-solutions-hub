@@ -6,7 +6,7 @@ const contactMethods = [
   {
     icon: ExternalLink,
     title: "Upwork Profile",
-    description: "View my portfolio and hire me directly",
+    description: "View our portfolio and hire us directly",
     action: "Visit Profile",
     href: "https://www.upwork.com/freelancers/~01335a915de51108df",
     primary: true
@@ -14,7 +14,7 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    description: "Send me a detailed project inquiry",
+    description: "Send us a detailed project inquiry",
     action: "Send Email",
     href: "mailto:ayeniadejuwon52@gmail.com",
     primary: false
@@ -42,8 +42,8 @@ const Contact = () => {
             Ready to Transform Your Shopify Store?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Let's discuss your project and see how I can help you achieve your e-commerce goals. 
-            I'm available for clients worldwide and ready to start immediately.
+            Let's discuss your project and see how we can help you achieve your e-commerce goals. 
+            We're available for clients worldwide and ready to start immediately.
           </p>
         </div>
         
@@ -94,7 +94,7 @@ const Contact = () => {
             Fast Response Guaranteed
           </h3>
           <p className="text-lg text-muted-foreground mb-6">
-            I typically respond to inquiries within 2-4 hours during business hours. 
+            We typically respond to inquiries within 2-4 hours during business hours. 
             For urgent projects, feel free to call directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

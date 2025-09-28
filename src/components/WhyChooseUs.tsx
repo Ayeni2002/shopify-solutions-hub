@@ -30,7 +30,7 @@ const reasons = [
   {
     icon: Users,
     title: "Client-First Approach",
-    description: "Your success is my priority - I work with you, not just for you"
+    description: "Your success is our priority - we work with you, not just for you"
   },
   {
     icon: TrendingUp,
@@ -54,20 +54,20 @@ const reasons = [
   }
 ];
 
-const WhyChooseMe = () => {
+const WhyChooseUs = () => {
   return (
     <section id="why-choose" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
           <Badge variant="secondary" className="px-4 py-2">
-            Why Choose Me
+            Why Choose Us
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            What Makes Me Different?
+            What Makes Us Different?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            When you work with me, you're not just hiring a developer - you're partnering with 
-            a dedicated Shopify expert committed to your success.
+            When you work with us, you're not just hiring developers - you're partnering with 
+            dedicated Shopify experts committed to your success.
           </p>
         </div>
 
@@ -97,4 +97,4 @@ const WhyChooseMe = () => {
   );
 };
 
-export default WhyChooseMe;
+export default WhyChooseUs;
