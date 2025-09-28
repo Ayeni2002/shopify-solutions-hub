@@ -38,8 +38,8 @@ const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 We're Adejuwon Ayeni and Marvellous Adebanjo, certified Shopify experts and co-founders 
                 of SHOPTECH with years of experience helping businesses worldwide transform their online 
-                presence. From small startups to established brands, we've helped clients across the 
-                globe overcome their Shopify challenges and achieve remarkable growth.
+                presence. From small startups to established brands, we will help you overcome your 
+                Shopify challenges and achieve remarkable growth.
               </p>
             </div>
             
