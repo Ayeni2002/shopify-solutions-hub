@@ -92,32 +92,6 @@ const WhyChooseMe = () => {
             </Card>
           ))}
         </div>
-
-        <div className="text-center bg-background/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Ready to Experience the Difference?
-          </h3>
-          <p className="text-lg text-muted-foreground mb-6">
-            Join hundreds of satisfied clients who've transformed their Shopify stores 
-            and achieved remarkable growth with my expert guidance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-muted-foreground">
-            <div className="flex items-center space-x-2">
-              <Award className="w-4 h-4 text-primary" />
-              <span>100% Client Satisfaction</span>
-            </div>
-            <div className="hidden sm:block h-4 w-px bg-border"></div>
-            <div className="flex items-center space-x-2">
-              <Clock className="w-4 h-4 text-primary" />
-              <span>Fast Response Guaranteed</span>
-            </div>
-            <div className="hidden sm:block h-4 w-px bg-border"></div>
-            <div className="flex items-center space-x-2">
-              <Globe className="w-4 h-4 text-primary" />
-              <span>Worldwide Service</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
