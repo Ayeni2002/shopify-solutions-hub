@@ -3,8 +3,6 @@ import { CheckCircle, Globe, Clock, Users } from "lucide-react";
 import globalTeamImage from "@/assets/global-team.jpg";
 
 const stats = [
-  { icon: Users, value: "50+", label: "Happy Clients" },
-  { icon: Globe, value: "15+", label: "Countries Served" },
   { icon: Clock, value: "24/7", label: "Support Available" },
   { icon: CheckCircle, value: "100%", label: "Project Success Rate" }
 ];
@@ -38,10 +36,10 @@ const About = () => {
                 Your Trusted Shopify Partner for Global Success
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm Adejuwon Ayeni, a certified Shopify expert with years of experience helping businesses 
-                worldwide transform their online presence. From small startups to established brands, 
-                I've helped clients across the globe overcome their Shopify challenges and achieve 
-                remarkable growth.
+                We're Adejuwon Ayeni and Marvellous Adebanjo, certified Shopify experts and co-founders 
+                of SHOPTECH with years of experience helping businesses worldwide transform their online 
+                presence. From small startups to established brands, we've helped clients across the 
+                globe overcome their Shopify challenges and achieve remarkable growth.
               </p>
             </div>
             
@@ -62,7 +60,7 @@ const About = () => {
               </ul>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center space-y-2">
                   <stat.icon className="w-6 h-6 text-primary mx-auto" />
