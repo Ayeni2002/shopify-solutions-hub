@@ -1,90 +1,75 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  ShoppingCart, 
-  Palette, 
-  Zap, 
-  BarChart, 
-  Settings, 
-  Smartphone,
-  ArrowRight 
-} from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Share2, Target, TrendingUp, MessageSquare, Mail, Video } from "lucide-react";
 
 const services = [
   {
-    icon: ShoppingCart,
-    title: "Store Setup & Configuration",
-    description: "Complete Shopify store setup, theme customization, and essential app integrations to get your business running smoothly.",
-    features: ["Theme Setup", "Payment Integration", "Shipping Configuration"]
+    icon: Share2,
+    title: "Social Media Management",
+    description: "Build your LiveGood presence with strategic content and community engagement across all platforms.",
+    features: ["Daily content creation", "Community engagement", "Platform optimization", "Growth analytics"],
   },
   {
-    icon: Palette,
-    title: "Custom Design & Development",
-    description: "Transform your store with custom designs, responsive layouts, and enhanced user experience that converts visitors to customers.",
-    features: ["Custom Themes", "Mobile Optimization", "UI/UX Enhancement"]
+    icon: Target,
+    title: "Sales Funnel Development",
+    description: "Convert prospects into members with high-converting sales funnels designed for LiveGood products.",
+    features: ["Landing page design", "Email automation", "Lead magnets", "Conversion optimization"],
   },
   {
-    icon: Zap,
-    title: "Performance Optimization",
-    description: "Speed up your store, fix technical issues, and optimize for better search engine rankings and user experience.",
-    features: ["Speed Optimization", "SEO Setup", "Bug Fixes"]
+    icon: TrendingUp,
+    title: "Paid Advertising",
+    description: "Reach your ideal LiveGood audience with targeted ad campaigns on Facebook, Instagram, and Google.",
+    features: ["Campaign strategy", "Ad creative development", "Audience targeting", "ROI optimization"],
   },
   {
-    icon: BarChart,
-    title: "Analytics & Conversion",
-    description: "Set up tracking, analyze store performance, and implement strategies to increase your conversion rates and sales.",
-    features: ["Google Analytics", "Conversion Tracking", "A/B Testing"]
+    icon: MessageSquare,
+    title: "Content Marketing",
+    description: "Establish authority and attract leads with valuable content about LiveGood products and wellness.",
+    features: ["Blog posts & articles", "Product education", "Success stories", "SEO content"],
   },
   {
-    icon: Settings,
-    title: "App Integration & Automation",
-    description: "Integrate essential apps, set up automated workflows, and streamline your business operations for maximum efficiency.",
-    features: ["App Setup", "Workflow Automation", "Third-party Integrations"]
+    icon: Mail,
+    title: "Email Marketing",
+    description: "Nurture leads and retain members with automated email campaigns that convert.",
+    features: ["Welcome sequences", "Product launches", "Newsletters", "Personalization"],
   },
   {
-    icon: Smartphone,
-    title: "Mobile Commerce Solutions",
-    description: "Optimize your store for mobile users, implement mobile-first strategies, and capture the growing mobile market.",
-    features: ["Mobile Optimization", "Progressive Web App", "Mobile Analytics"]
-  }
+    icon: Video,
+    title: "Video Marketing",
+    description: "Create engaging video content showcasing LiveGood products and member success stories.",
+    features: ["Product demonstrations", "Testimonial videos", "Educational content", "Social video ads"],
+  },
 ];
 
 const Services = () => {
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center space-y-6 mb-16">
-          <div className="flex items-center justify-center space-x-2 text-primary">
-            <Settings className="w-5 h-5" />
-            <span className="text-sm font-semibold uppercase tracking-wide">Solutions</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Comprehensive Shopify Solutions
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <Badge variant="outline" className="mb-4">Our Services</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Complete Marketing Solutions for LiveGood Members
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From store setup to advanced optimization, we provide end-to-end Shopify services 
-            that help your business grow and succeed in the competitive e-commerce landscape.
+          <p className="text-lg text-muted-foreground">
+            We handle everything from social media to sales funnels, so you can focus on building relationships and growing your team.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-primary transition-all duration-300 border-border/50 hover:border-primary/30">
-              <CardHeader className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-6 h-6 text-primary-foreground" />
+            <Card key={index} className="group hover:shadow-elegant transition-all duration-300">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-3">
+                  <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-foreground group-hover:text-primary transition-colors">
-                  {service.title}
-                </CardTitle>
+                <CardTitle>{service.title}</CardTitle>
+                <CardDescription>{service.description}</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <CardDescription className="text-muted-foreground">
-                  {service.description}
-                </CardDescription>
+              <CardContent>
                 <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center text-sm">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
                       {feature}
                     </li>
@@ -94,19 +79,9 @@ const Services = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="text-center mt-16">
-          <Button variant="cta" size="lg" asChild>
-            <a 
-              href="https://www.upwork.com/freelancers/~01335a915de51108df" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group"
-            >
-              Start Your Project Today
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-          </Button>
+
+        <div className="text-center mt-12">
+          <Button size="lg" variant="secondary">Schedule Free Consultation</Button>
         </div>
       </div>
     </section>

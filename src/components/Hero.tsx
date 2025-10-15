@@ -1,67 +1,58 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import heroImage from "@/assets/hero-shopify.jpg";
 
 const Hero = () => {
   return (
-    <section className="pt-20 pb-16 bg-gradient-subtle min-h-screen flex items-center">
-      <div className="container mx-auto px-4">
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden">
+      <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:32px_32px]" />
+      
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-primary">
-                <Zap className="w-5 h-5" />
-                <span className="text-sm font-semibold uppercase tracking-wide">Shopify Expert</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Transform Your 
-                <span className="bg-gradient-primary bg-clip-text text-transparent"> Shopify Store</span> 
-                Into a Sales Machine
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Stop struggling with Shopify issues. Get professional solutions that boost your store's performance, 
-                increase conversions, and drive real results for your business.
-              </p>
+          <div className="text-white space-y-6 animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+              <CheckCircle2 className="w-4 h-4" />
+              <span className="text-sm font-medium">LiveGood Marketing Experts</span>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" asChild>
-                <a 
-                  href="https://www.upwork.com/freelancers/~01335a915de51108df" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  Get Expert Help Now
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Scale Your LiveGood Business with
+              <span className="block text-primary-glow">Professional Marketing</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+              We're a dedicated team of marketing specialists helping LiveGood members grow their business through proven digital strategies, social media management, and sales funnel optimization.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Button size="lg" variant="secondary" className="group">
+                Get Started Today
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" asChild>
-                <a href="#services">View Services</a>
+              <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+                View Our Services
               </Button>
             </div>
             
-            <div className="flex items-center space-x-6 pt-4">
-              <div className="flex items-center space-x-2">
-                <Globe className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">Serving clients globally</span>
+            <div className="flex flex-wrap gap-8 pt-6 border-t border-white/20">
+              <div>
+                <p className="text-sm text-white/70">Trusted By</p>
+                <p className="text-xl font-semibold">500+ LiveGood Members</p>
               </div>
-              <div className="h-4 w-px bg-border"></div>
-              <div className="text-sm text-muted-foreground">
-                Available on <span className="text-primary font-semibold">Upwork</span>
+              <div>
+                <p className="text-sm text-white/70">Success Rate</p>
+                <p className="text-xl font-semibold">98% Client Satisfaction</p>
               </div>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="relative z-10">
-              <img 
-                src={heroImage} 
-                alt="Professional Shopify dashboard solutions" 
-                className="rounded-2xl shadow-elegant w-full h-auto"
-              />
-            </div>
-            <div className="absolute -top-4 -right-4 -bottom-4 -left-4 bg-gradient-primary rounded-2xl opacity-20 blur-xl"></div>
+          <div className="relative lg:block hidden">
+            <div className="absolute inset-0 bg-gradient-primary blur-3xl opacity-30 rounded-full" />
+            <img
+              src={heroImage}
+              alt="LiveGood Marketing Team"
+              className="relative rounded-2xl shadow-elegant w-full object-cover"
+            />
           </div>
         </div>
       </div>
