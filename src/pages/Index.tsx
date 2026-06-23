@@ -39,6 +39,7 @@ const Nav = () => (
         <a href="#problems" className="hover:text-foreground transition-colors">Problems</a>
         <a href="#service" className="hover:text-foreground transition-colors">What You Get</a>
         <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+        <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </nav>
       <a href="#pricing">
