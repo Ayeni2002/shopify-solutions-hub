@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
   Search, Gauge, Smartphone, Bot, AlertTriangle, Eye, Layers, TrendingUp,
   CheckCircle2, ShieldCheck, Zap, Sparkles, ArrowRight, Mail, MessageCircle,
-  Twitter, Briefcase, Clock, Target, Rocket, LineChart
+  Twitter, Briefcase, Clock, Target, Rocket, LineChart, Plus, Minus
 } from "lucide-react";
 import ayeniAsset from "@/assets/ayeni.jpg.asset.json";
 
@@ -33,12 +33,13 @@ const Nav = () => (
         <span className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center text-primary-foreground shadow-primary">
           <Sparkles className="w-4 h-4" />
         </span>
-        SHOP<span className="text-gradient">TECH</span>
+        <span className="text-gradient">SHOPTECH</span>
       </a>
       <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#problems" className="hover:text-foreground transition-colors">Problems</a>
         <a href="#service" className="hover:text-foreground transition-colors">What You Get</a>
         <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+        <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </nav>
       <a href="#pricing">
@@ -386,6 +387,99 @@ const Contact = () => (
   </section>
 );
 
+const faqs = [
+  {
+    q: "How is this different from running a free online speed test myself?",
+    a: "Free scans show surface-level scores. The SHOPTECH audit goes inside your Shopify theme, sitemap, robots, schema, and crawl behavior to tell you exactly which products and collections Google is ignoring, why, and what to change first for the biggest revenue impact.",
+  },
+  {
+    q: "Will the audit hurt my live store, conversions, or current rankings?",
+    a: "No. The audit is read-only. I never touch your live theme, apps, or checkout. You stay fully in control — I only deliver findings and a prioritized action plan.",
+  },
+  {
+    q: "I already have an SEO app installed. Do I still need this?",
+    a: "Apps automate basics, but they can't tell you why specific products aren't indexed, why your crawl budget is wasted, or which technical issues are quietly killing sales. The audit fills that exact gap.",
+  },
+  {
+    q: "How fast will I see results after fixing the issues?",
+    a: "Most stores see crawl and indexing improvements within 2–4 weeks once fixes are deployed. Speed and Core Web Vitals improvements typically show up within days of going live.",
+  },
+  {
+    q: "Does this work for new stores with no traffic yet?",
+    a: "Yes — and it's actually the best time. Launching with a properly indexed, fast, crawlable store means Google starts ranking you sooner instead of fighting old technical debt later.",
+  },
+  {
+    q: "Do you work with stores outside the US?",
+    a: "Yes. I work with Shopify store owners worldwide — North America, Europe, UK, Australia, Africa, and the Middle East. Everything is delivered remotely via email, WhatsApp, or Upwork.",
+  },
+  {
+    q: "What if the audit finds nothing wrong with my store?",
+    a: "That has never happened. Every Shopify store I've audited had hidden indexing, crawl, schema, or speed issues costing visibility. You'll always walk away with a clear plan — or your money back.",
+  },
+  {
+    q: "Do I need to give you admin access to my Shopify store?",
+    a: "No admin access required for the audit itself. I only need your store URL. If you later want me to implement fixes, you can grant limited Shopify collaborator access — never your password.",
+  },
+  {
+    q: "Is my store data kept private?",
+    a: "Always. Your URL, findings, and reports are never shared, resold, or used as case studies without your written permission.",
+  },
+  {
+    q: "What if I'm not technical at all?",
+    a: "The report is written in plain language with clear priorities. You can hand it to any Shopify developer — or I can implement the fixes for you on request.",
+  },
+];
+
+const FAQ = () => (
+  <section id="faq" className="py-24 bg-card/40">
+    <div className="container max-w-4xl">
+      <div className="text-center reveal">
+        <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold border border-primary/20">
+          <MessageCircle className="w-3.5 h-3.5" /> Answers Before You Ask
+        </span>
+        <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          Questions Shopify Owners <span className="text-gradient">Actually Ask</span>
+        </h2>
+        <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          The real concerns store owners message me about before booking an audit.
+        </p>
+      </div>
+
+      <div className="mt-12 space-y-3">
+        {faqs.map((f, i) => (
+          <details
+            key={i}
+            className="group reveal rounded-2xl border border-border bg-background p-5 md:p-6 shadow-card transition-all hover:border-primary/40 open:border-primary/60 open:shadow-primary"
+            style={{ transitionDelay: `${i * 40}ms` }}
+          >
+            <summary className="flex items-start gap-4 cursor-pointer list-none">
+              <span className="mt-1 w-8 h-8 shrink-0 rounded-lg bg-primary/10 text-primary grid place-items-center transition-transform group-open:rotate-180">
+                <Plus className="w-4 h-4 group-open:hidden" />
+                <Minus className="w-4 h-4 hidden group-open:block" />
+              </span>
+              <h3 className="font-semibold text-base md:text-lg leading-snug pt-1">
+                {f.q}
+              </h3>
+            </summary>
+            <div className="mt-4 pl-12 text-muted-foreground leading-relaxed animate-fade-in">
+              {f.a}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div className="mt-12 text-center reveal">
+        <p className="text-muted-foreground">Still have a question about your store?</p>
+        <a href="#contact">
+          <Button className="mt-4 bg-gradient-primary hover:opacity-90 shadow-primary h-11 px-6">
+            Ask Me Directly <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
 const FinalCTA = () => (
   <section className="py-24">
     <div className="container">
@@ -417,7 +511,7 @@ const Footer = () => (
           <span className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center text-primary-foreground">
             <Sparkles className="w-4 h-4" />
           </span>
-          SHOP<span className="text-gradient">TECH</span>
+          <span className="text-gradient">SHOPTECH</span>
         </div>
         <p className="mt-3 text-sm text-muted-foreground">Shopify Visibility & Performance Audits</p>
       </div>
@@ -460,6 +554,7 @@ const Index = () => {
       <Pricing />
       <Benefits />
       <Contact />
+      <FAQ />
       <FinalCTA />
       <Footer />
     </main>
