@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
   Search, Gauge, Smartphone, Bot, AlertTriangle, Eye, Layers, TrendingUp,
   CheckCircle2, ShieldCheck, Zap, Sparkles, ArrowRight, Mail, MessageCircle,
-  Twitter, Briefcase, Clock, Target, Rocket, LineChart
+  Twitter, Briefcase, Clock, Target, Rocket, LineChart, Plus, Minus
 } from "lucide-react";
 import ayeniAsset from "@/assets/ayeni.jpg.asset.json";
 
@@ -33,7 +33,7 @@ const Nav = () => (
         <span className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center text-primary-foreground shadow-primary">
           <Sparkles className="w-4 h-4" />
         </span>
-        SHOP<span className="text-gradient">TECH</span>
+        <span className="text-gradient">SHOPTECH</span>
       </a>
       <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#problems" className="hover:text-foreground transition-colors">Problems</a>
@@ -417,7 +417,7 @@ const Footer = () => (
           <span className="w-8 h-8 rounded-lg bg-gradient-primary grid place-items-center text-primary-foreground">
             <Sparkles className="w-4 h-4" />
           </span>
-          SHOP<span className="text-gradient">TECH</span>
+          <span className="text-gradient">SHOPTECH</span>
         </div>
         <p className="mt-3 text-sm text-muted-foreground">Shopify Visibility & Performance Audits</p>
       </div>
