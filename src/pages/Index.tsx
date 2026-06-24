@@ -43,7 +43,7 @@ const Nav = () => (
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </nav>
       <a href="#pricing">
-        <Button className="bg-gradient-primary hover:opacity-90 shadow-primary">Claim $60 Audit</Button>
+        <Button className="bg-gradient-primary hover:opacity-90 shadow-primary">Claim $40 Audit</Button>
       </a>
     </div>
   </header>
@@ -92,7 +92,7 @@ const Hero = () => (
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a href="#pricing">
               <Button size="lg" className="bg-gradient-primary hover:opacity-90 shadow-primary animate-pulse-glow text-base h-12 px-6">
-                Claim My $60 Audit <ArrowRight className="ml-2 w-4 h-4" />
+                Claim My $40 Audit <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
             <a href="#service">
@@ -227,7 +227,7 @@ const Service = () => {
           </p>
           <a href="#pricing" className="inline-block mt-8">
             <Button size="lg" className="bg-gradient-primary hover:opacity-90 shadow-primary">
-              Claim My $60 Audit <ArrowRight className="ml-2 w-4 h-4" />
+              Claim My $40 Audit <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </a>
         </div>
@@ -264,7 +264,7 @@ const Pricing = () => (
               <Clock className="w-3.5 h-3.5" /> Limited slots this month
             </div>
             <div className="mt-6 flex items-end justify-center gap-2">
-              <span className="text-6xl font-bold tracking-tight">$60</span>
+              <span className="text-6xl font-bold tracking-tight">$40</span>
               <span className="text-muted-foreground mb-2">USD</span>
             </div>
             <p className="mt-1 font-semibold text-primary">One-Time Payment</p>
@@ -490,7 +490,7 @@ const FinalCTA = () => (
             Every Day Your Store Isn't Properly Optimized Is a Missed Opportunity
           </h2>
           <p className="mt-5 text-primary-foreground/90 max-w-xl mx-auto">
-            Book your Shopify visibility and performance audit today for a one-time payment of $60.
+            Book your Shopify visibility and performance audit today for a one-time payment of $40.
           </p>
           <a href="#contact">
             <Button size="lg" className="mt-8 bg-background text-primary hover:bg-background/90 h-12 px-8 shadow-elegant">
