@@ -42,7 +42,7 @@ const Nav = () => (
         <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </nav>
-      <a href="#pricing">
+      <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer">
         <Button className="bg-gradient-primary hover:opacity-90 shadow-primary">Claim $40 Audit</Button>
       </a>
     </div>
@@ -90,7 +90,7 @@ const Hero = () => (
             discover, crawl, index, or understand their pages.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#pricing">
+            <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-primary hover:opacity-90 shadow-primary animate-pulse-glow text-base h-12 px-6">
                 Claim My $40 Audit <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -225,7 +225,7 @@ const Service = () => {
             A complete review of how Google sees and experiences your Shopify store — with the exact
             fixes that move the needle.
           </p>
-          <a href="#pricing" className="inline-block mt-8">
+          <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer" className="inline-block mt-8">
             <Button size="lg" className="bg-gradient-primary hover:opacity-90 shadow-primary">
               Claim My $40 Audit <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -275,7 +275,7 @@ const Pricing = () => (
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="block mt-8">
+            <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer" className="block mt-8">
               <Button size="lg" className="w-full bg-gradient-primary hover:opacity-90 shadow-primary animate-pulse-glow h-12">
                 Secure My Spot
               </Button>
@@ -492,7 +492,7 @@ const FinalCTA = () => (
           <p className="mt-5 text-primary-foreground/90 max-w-xl mx-auto">
             Book your Shopify visibility and performance audit today for a one-time payment of $40.
           </p>
-          <a href="#contact">
+          <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="mt-8 bg-background text-primary hover:bg-background/90 h-12 px-8 shadow-elegant">
               Claim My Audit Now <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
