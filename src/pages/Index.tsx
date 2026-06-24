@@ -251,37 +251,84 @@ const Service = () => {
 const Pricing = () => (
   <section id="pricing" className="py-24 bg-background">
     <div className="container">
-      <div className="max-w-xl mx-auto text-center reveal">
-        <span className="text-xs uppercase tracking-widest text-primary font-semibold">Simple Pricing</span>
-        <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">One audit. One price.</h2>
-        <p className="mt-4 text-muted-foreground">No subscriptions. No retainers. Just clarity.</p>
+      <div className="max-w-2xl mx-auto text-center reveal">
+        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-widest animate-pulse-glow">
+          🔥 Limited Launch Offer
+        </span>
+        <h2 className="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          Your Shopify Store Could Be <span className="text-gradient">Losing Visibility</span> Without You Knowing It
+        </h2>
+        <p className="mt-4 text-muted-foreground md:text-lg">
+          Identify indexing, crawlability, technical SEO, and performance issues before they impact traffic and sales.
+        </p>
       </div>
-      <div className="mt-12 max-w-md mx-auto reveal">
+
+      <div className="mt-12 max-w-2xl mx-auto reveal">
         <div className="relative rounded-3xl border border-primary/30 bg-card shadow-elegant overflow-hidden">
           <div className="absolute inset-x-0 top-0 h-1 bg-gradient-primary" />
-          <div className="p-8 text-center">
+          {/* Floating accent orbs */}
+          <div className="pointer-events-none absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary/10 blur-3xl animate-float" />
+          <div className="pointer-events-none absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-primary/10 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+
+          <div className="relative p-8 md:p-12 text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-              <Clock className="w-3.5 h-3.5" /> Limited slots this month
+              <Clock className="w-3.5 h-3.5" /> Launch Pricing — Limited Capacity
             </div>
-            <div className="mt-6 flex items-end justify-center gap-2">
-              <span className="text-6xl font-bold tracking-tight">$40</span>
-              <span className="text-muted-foreground mb-2">USD</span>
+
+            <div className="mt-6 flex items-end justify-center gap-3">
+              <span className="text-2xl md:text-3xl text-muted-foreground line-through decoration-2">$150</span>
+              <span className="text-7xl md:text-8xl font-extrabold tracking-tight text-gradient leading-none animate-scale-in">$40</span>
+              <span className="text-muted-foreground mb-3">USD</span>
             </div>
-            <p className="mt-1 font-semibold text-primary">One-Time Payment</p>
-            <ul className="mt-6 space-y-3 text-left">
-              {["No subscriptions", "No recurring charges", "No hidden fees", "Full audit deliverable", "Actionable recommendations"].map((f) => (
-                <li key={f} className="flex items-center gap-3 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-primary" /> {f}
-                </li>
-              ))}
-            </ul>
-            <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer" className="block mt-8">
-              <Button size="lg" className="w-full bg-gradient-primary hover:opacity-90 shadow-primary animate-pulse-glow h-12">
-                Secure My Spot
+
+            <div className="mt-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-primary animate-pulse-glow">
+              Save $110 Today
+            </div>
+            <p className="mt-3 font-semibold text-primary">One-Time Payment · No Subscriptions</p>
+
+            <div className="mt-8 rounded-2xl border border-primary/30 bg-primary/5 p-5 text-left">
+              <p className="text-sm md:text-base text-foreground">
+                To ensure every audit receives personal attention, only a limited number of Shopify stores are accepted each month at the launch price.
+              </p>
+              <p className="mt-2 text-sm md:text-base text-muted-foreground">
+                Once the available launch slots are filled, the audit returns to its standard price of <span className="font-semibold text-foreground">$150</span>.
+              </p>
+            </div>
+
+            <div className="mt-8 text-left">
+              <p className="text-sm font-semibold uppercase tracking-widest text-primary text-center">What You'll Receive</p>
+              <ul className="mt-5 grid sm:grid-cols-2 gap-3">
+                {[
+                  "Google Indexing Review",
+                  "Crawlability Analysis",
+                  "Technical SEO Audit",
+                  "Website Performance Assessment",
+                  "Mobile Experience Review",
+                  "Search Visibility Review",
+                  "Prioritized Action Plan",
+                  "Detailed Audit Report",
+                ].map((f, i) => (
+                  <li
+                    key={f}
+                    className="flex items-start gap-3 text-sm reveal"
+                    style={{ transitionDelay: `${i * 60}ms` }}
+                  >
+                    <span className="mt-0.5 w-5 h-5 rounded-full bg-primary/15 text-primary grid place-items-center shrink-0 animate-scale-in">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </span>
+                    <span className="text-foreground">{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <a href="https://flutterwave.com/pay/shoptech-audit" target="_blank" rel="noopener noreferrer" className="block mt-10">
+              <Button size="lg" className="w-full bg-gradient-primary hover:opacity-90 shadow-primary animate-pulse-glow h-14 text-base md:text-lg font-semibold hover-scale">
+                Claim My $40 Audit <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </a>
-            <p className="mt-4 text-xs text-muted-foreground">
-              Only a limited number of audits are accepted each month.
+            <p className="mt-4 text-xs md:text-sm text-muted-foreground">
+              Secure your launch pricing before all discounted audit slots are filled.
             </p>
           </div>
         </div>
