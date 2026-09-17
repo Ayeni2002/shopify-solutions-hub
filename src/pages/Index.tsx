@@ -5,7 +5,7 @@ import {
   CheckCircle2, ShieldCheck, Zap, Sparkles, ArrowRight, Mail, MessageCircle,
   Twitter, Briefcase, Clock, Target, Rocket, LineChart, Plus, Minus
 } from "lucide-react";
-import ayeniAsset from "@/assets/ayeni.jpg.asset.json";
+import ayeniPhoto from "@/assets/ayeni.jpg";
 
 const useReveal = () => {
   useEffect(() => {
@@ -105,7 +105,7 @@ const Hero = () => (
 
           <div className="mt-10 flex items-center gap-4 p-4 rounded-2xl border border-border bg-card/70 backdrop-blur shadow-card max-w-md">
             <img
-              src={ayeniAsset.url}
+              src={ayeniPhoto}
               alt="Samuel Ayeni — Shopify visibility specialist"
               className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/30"
             />
